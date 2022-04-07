@@ -1,0 +1,180 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+<main class="innerpage" id="root">
+    <button class="thanks-fix" id="knowprice">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.140619 19.3943L2.46351 17.0711L3.4062 18.014C3.47118 18.079 3.55648 18.1117 3.64179 18.1117C3.72709 18.1117 3.8124 18.079 3.87737 18.014C4.00766 17.8837 4.00766 17.673 3.87737 17.5427L2.93469 16.5997L3.64179 15.8924L5.05565 17.3067C5.12063 17.3717 5.20593 17.4044 5.29124 17.4044C5.37654 17.4044 5.46185 17.3717 5.52682 17.3067C5.65711 17.1764 5.65711 16.9657 5.52682 16.8354L4.11296 15.4211L4.81973 14.7141L5.76241 15.6571C5.82739 15.7221 5.91269 15.7548 5.998 15.7548C6.08331 15.7548 6.16861 15.7221 6.23359 15.6571C6.36388 15.5268 6.36388 15.3161 6.23359 15.1858L5.2909 14.2428L5.998 13.5358L7.41186 14.9501C7.47684 15.0151 7.56215 15.0478 7.64745 15.0478C7.73276 15.0478 7.81806 15.0151 7.88304 14.9501C8.01333 14.8198 8.01333 14.6091 7.88304 14.4788L6.46918 13.0645L7.17627 12.3575L8.11896 13.3001C8.18394 13.3651 8.26924 13.3978 8.35455 13.3978C8.43985 13.3978 8.52516 13.3651 8.59014 13.3001C8.72043 13.1698 8.72043 12.9592 8.59014 12.8288L7.64745 11.8862L8.35455 11.1789L9.76841 12.5932C9.83339 12.6582 9.91869 12.6908 10.004 12.6908C10.0893 12.6908 10.1746 12.6582 10.2396 12.5932C10.3699 12.4628 10.3699 12.2522 10.2396 12.1218L8.82572 10.7075L9.53249 10.0005L10.4748 10.9432C10.5398 11.0082 10.6251 11.0409 10.7104 11.0409C10.7957 11.0409 10.881 11.0082 10.946 10.9432C11.0763 10.8129 11.0763 10.6022 10.946 10.4719L10.0033 9.52856L10.7104 8.82158L12.1243 10.2359C12.1893 10.3009 12.2746 10.3335 12.3599 10.3335C12.4452 10.3335 12.5305 10.3009 12.5955 10.2359C12.7258 10.1055 12.7258 9.89489 12.5955 9.76455L11.1816 8.35025L11.8887 7.64293L12.8311 8.58558C12.896 8.65058 12.9813 8.68324 13.0666 8.68324C13.1519 8.68324 13.2373 8.65058 13.3022 8.58558C13.4325 8.45525 13.4325 8.24459 13.3022 8.11426L12.3599 7.17161L13.0666 6.46463L14.4805 7.8786C14.5455 7.94359 14.6308 7.97626 14.7161 7.97626C14.8014 7.97626 14.8867 7.94359 14.9517 7.8786C15.082 7.74826 15.082 7.5376 14.9517 7.40727L13.5378 5.9933L14.2449 5.28632L15.1876 6.2293C15.2526 6.2943 15.3379 6.32696 15.4232 6.32696C15.5085 6.32696 15.5938 6.2943 15.6588 6.2293C15.7891 6.09897 15.7891 5.88831 15.6588 5.75798L14.7161 4.81499L15.4232 4.10768L16.8371 5.52165C16.902 5.58665 16.9873 5.61931 17.0726 5.61931C17.1579 5.61931 17.2426 5.58665 17.3076 5.52165C17.4379 5.39132 17.4379 5.18065 17.3076 5.05032L15.8937 3.63635L16.6005 2.92937L17.5428 3.87202C17.6078 3.93701 17.6931 3.96968 17.7784 3.96968C17.8637 3.96968 17.949 3.93701 18.014 3.87202C18.1443 3.74169 18.1443 3.53102 18.014 3.40069L17.0716 2.45805L19.4309 0.0980973C19.5268 0.0024327 19.6694 -0.0265667 19.7944 0.0257655C19.9187 0.0770978 20 0.198762 20 0.333759V19.6667C20 19.851 19.8507 20 19.6668 20H0.339886C0.337553 19.9997 0.33522 20 0.333221 20C0.149282 20 0 19.851 0 19.6667C0 19.5543 0.055315 19.455 0.140619 19.3943ZM9.987 16.0001C9.989 16.0001 9.99134 16.0001 9.99367 16.0001H15.6681C15.852 16.0001 16.0013 15.8511 16.0013 15.6668V9.99022C16.0013 9.85555 15.92 9.73355 15.7957 9.68222C15.6711 9.62956 15.5282 9.65922 15.4325 9.75455L9.7944 15.3948C9.70943 15.4551 9.65378 15.5544 9.65378 15.6664C9.65378 15.8508 9.80273 16.0001 9.987 16.0001Z" fill="#306B27"/>
+        </svg>
+        Заказать замер     
+    </button>
+    <section class="thanks" id="thanks">
+        <div class="container">
+            <h1 class="thanks__title">
+                Мы получили ваше обращение
+                <strong>и приступили к расчету!</strong>
+            </h1>
+            <p class="thanks__txt">
+                Обязательно дождитесь нашего звонка в течение 15 минут
+            </p>
+        </div>
+    </section>
+    <section class="call">
+        <div class="container">
+            <h2 class="call__title">
+                Если вы хотите узнать <strong>окончательную стоимость</strong> ремонта, закажите выезд сметчика для замера
+            </h2>
+            <div class="call__row">
+                <div class="call__content">
+                    <h3 class="call__content-title">
+                        Это позволит:
+                    </h3>
+                    <ul class="call__list">
+                        <li>
+                            Встретиться с дизайнером и <strong>определить несколько вариантов интерьера</strong>
+                        </li>
+                        <li>
+                            <strong>Рассчитать площадь помещения и объем</strong> <br> только тех работ, которые необходимы
+                        </li>
+                        <li>
+                            <strong>Подобрать хорошие материалы</strong> <br>
+                            по качеству, колличеству и цене
+                        </li>
+                        <li>
+                            <strong>Озвучить точные сроки на ремонт</strong> <br>
+                            с поэтапным планом от начала до сдачи
+                        </li>
+                        <li>
+                            <strong>Узнать все гарантии</strong> для клиентов Domeo и текущие акции
+                        </li>
+                    </ul>
+                </div>
+                <form action="" class="call__form">
+                    <h3 class="call__form-title">
+                        Закажите замер <br>
+                        в удобное для вас время
+                    </h3>
+                    <p class="call__form-txt">
+                        в среднем замер занимает не более 40 минут
+                    </p>
+                    <p class="call__form-can">
+                        на замер можно пригласить дизайнера
+                    </p>
+                    <div class="call__form-check">
+                        <input type="checkbox" name="check" id="check" checked>
+                        <label for="check" class="call__form-label">
+                            Поставьте галочку, если хотите пригласить дизайнера на замер
+                        </label>
+                    </div>
+                    <div class="call__form-wrapper">
+                        <input type="text" class="call__form-control js--mask"  required placeholder="+7(___)___-__-__">
+                        <button class="call__form-btn">
+                            <div class="linear-bg"></div>
+                <span>ЗАКАЗАТЬ ЗАМЕР</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="socials">
+        <div class="container">
+            <h2 class="socials__title">
+                А пока <strong>переходите в наши соц. сети,</strong>
+                чтобы узнать о Domeo еще больше
+            </h2>
+            <div class="socials__help">
+                Нажимайте <img src="<%=require('@img/socials-pointer.png') %>" alt=""> чтобы посмотреть другую соц. сеть
+            </div>
+            <div class="socials__wrapper">
+                <div class="socials__arrow socials__arrow_prev arrow-default"><svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.000304017 12.6426C0.00484961 13.1936 0.228793 13.7216 0.624867 14.1143L11.0513 24.2967C11.4583 24.6959 12.0107 24.9208 12.5874 24.922C13.1641 24.9232 13.7177 24.7006 14.1263 24.3035C14.5351 23.906 14.7654 23.3665 14.7666 22.8033C14.7678 22.2401 14.5399 21.6995 14.1332 21.3005L5.24127 12.6167L14.1332 3.93293V3.93263C14.6811 3.39519 14.8939 2.61271 14.6911 1.88055C14.4884 1.14809 13.9011 0.576924 13.1505 0.382217C12.3996 0.187487 11.5996 0.398789 11.0513 0.936519L0.624883 11.1189C0.215482 11.5246 -0.00968037 12.0742 0.000319405 12.6436L0.000304017 12.6426Z" fill="#8A7354"/>
+                </svg></div>
+                <div class="socials__arrow socials__arrow_next arrow-default"><svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.9997 12.6426C14.9952 13.1936 14.7712 13.7216 14.3751 14.1143L3.94868 24.2967C3.5417 24.6959 2.98928 24.9208 2.41257 24.922C1.83589 24.9232 1.28226 24.7006 0.873735 24.3035C0.46494 23.906 0.234627 23.3665 0.233417 22.8033C0.232206 22.2401 0.46009 21.6995 0.866768 21.3005L9.75873 12.6167L0.866768 3.93293V3.93263C0.318875 3.39519 0.106141 2.61271 0.308875 1.88055C0.511609 1.14809 1.09893 0.576924 1.84949 0.382217C2.60042 0.187487 3.40043 0.398789 3.94867 0.936519L14.3751 11.1189C14.7845 11.5246 15.0097 12.0742 14.9997 12.6436L14.9997 12.6426Z" fill="#8A7354"/>
+                </svg> </div>
+                <div class="swiper socials__slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide socials__item  socials__item_dz">
+                          <div class="socials__name">
+                              <img src="<%=require('@img/soc-i-1.svg') %>" alt="">
+                              ЯНДЕКС ДЗЕН
+                          </div>
+                        <div class="socials__img"><img src="<%=require('@img/socials-1.png') %>" alt=""></div>
+                        <a href="https://zen.yandex.ru/id/6130cb1eb0106960fd8890ce" class="socials__link">ПЕРЕЙТИ В ДЗЕН</a>
+                      </div>
+                      <div class="swiper-slide socials__item">
+                        <div class="socials__name">
+                            <img src="<%=require('@img/soc-i-2.svg') %>" alt="">
+                            HOUZZ
+                        </div>
+                        <img src="<%=require('@img/socials-2.png') %>" alt="">
+                        <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/domeo-domeo-pfvwru-pf~1421370481?yclid=16907189437664329727" class="socials__link">ПЕРЕЙТИ В HOUZZ</a>
+                      </div>
+                      <div class="swiper-slide socials__item">
+                        <div class="socials__name">
+                            <img src="<%=require('@img/soc-i-3.svg') %>" alt="">
+                            ВКОНТАКТЕ
+                        </div>
+                        <img src="<%=require('@img/socials-3.png') %>" alt="">
+                        <a href="https://vk.com/domeo" class="socials__link">ПЕРЕЙТИ ВКОНТАКТЕ</a>
+                      </div>
+                      <div class="swiper-slide socials__item">
+                        <div class="socials__name">
+                            <img src="<%=require('@img/soc-i-4.svg') %>" alt="">
+                            YOUTUBE
+                        </div>
+                        <img src="<%=require('@img/socials-4.png') %>" alt="">
+                        <a href="https://youtube.com/c/DOMEO-ru" class="socials__link">ПЕРЕЙТИ В YOUTUBE</a>
+                      </div>
+                      <div class="swiper-slide socials__item socials__item_inst">
+                        <div class="socials__name">
+                            <img src="<%=require('@img/soc-i-5.svg') %>" alt="">
+                            INSTAGRAM
+                        </div>
+                        <img src="<%=require('@img/socials-5.png') %>" alt="">
+                        <a href="https://instagram.com/domeo.ru?utm_medium=ashihin" class="socials__link">ПЕРЕЙТИ В INSTAGRAM</a>
+                      </div>
+                      <div class="swiper-slide socials__item">
+                        <div class="socials__name">
+                            <img src="<%=require('@img/soc-i-6.svg') %>" alt="">
+                            TELEGRAM
+                        </div>
+                        <img src="<%=require('@img/socials-6.png') %>" alt="">
+                        <a href="https://t.me/domeoru" class="socials__link">ПЕРЕЙТИ В TELEGRAM</a>
+                      </div>
+                      <div class="swiper-slide socials__item">
+                        <div class="socials__name">
+                            <img src="<%=require('@img/soc-i-7.svg') %>" alt="">
+                            PINTEREST
+                        </div>
+                        <img src="<%=require('@img/socials-7.png') %>" alt="">
+                        <a href="https://www.pinterest.ca/domeoru/_created/" class="socials__link">ПЕРЕЙТИ В PINTEREST</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="back befooter">
+        <div class="container">
+            <p class="back__txt">
+                <strong>Если вы хотите еще раз посмотреть</strong> отзывы клиентов, фото и видео примеры наших работ, <strong>вернитесь на главную</strong>
+            </p>
+            <div class="back__link-wrapper">
+                <a href="/" class="back__link">
+                    <div class="linear-bg"></div>
+                <span>НА ГЛАВНУЮ</span>
+                </a>
+            </div>
+            <div class="distant__back-wrapper">
+                <button class="distant__back open-footer">
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.39939 0.0275324C8.74193 0.030358 9.07012 0.169567 9.31426 0.415775L15.6439 6.89709C15.892 7.15008 16.0318 7.49348 16.0326 7.85198C16.0333 8.21046 15.895 8.5546 15.6481 8.80855C15.401 9.06267 15.0657 9.20584 14.7156 9.20659C14.3654 9.20734 14.0294 9.06568 13.7814 8.81288L8.38332 3.28544L2.98528 8.81288L2.98509 8.81288C2.65101 9.15347 2.1646 9.28571 1.70947 9.15968C1.25416 9.03366 0.899109 8.66857 0.778074 8.202C0.657025 7.7352 0.788376 7.2379 1.12264 6.8971L7.45223 0.415785C7.70445 0.161292 8.04605 0.0213259 8.40002 0.027542L8.39939 0.0275324Z" fill="#8A7354"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= require('@parts/footer.ejs')() %>

@@ -1,0 +1,1641 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+<button class="fix__close" id="fixClose">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.8334 14C13.1308 14 13.4313 13.8863 13.6588 13.6588C14.1137 13.2039 14.1137 12.466 13.6588 12.008L8.65081 7L13.6588 1.992C14.1137 1.53708 14.1137 0.799169 13.6588 0.341193C13.2039 -0.113731 12.466 -0.113731 12.008 0.341193L7 5.34919L1.992 0.341193C1.53708 -0.113731 0.799169 -0.113731 0.341193 0.341193C-0.113731 0.796117 -0.113731 1.53403 0.341193 1.992L5.34919 7L0.341193 12.008C-0.113731 12.4629 -0.113731 13.2008 0.341193 13.6588C0.568655 13.8863 0.86917 14 1.16662 14C1.46408 14 1.76455 13.8863 1.99205 13.6588L7.00005 8.65081L12.0081 13.6588C12.2355 13.8863 12.536 14 12.8335 14H12.8334Z" fill="white"/>
+    </svg>                                 
+</button>
+<div class="mob-fix">
+    <a href="#quiz-sec" class="mob-fix__left scroll-to">
+        Рассчитать стоимость
+    </a>
+    <a href="tel:+7 (495) 845-17-58" class="mob-fix__right">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.382092 5.93881C0.134752 5.27073 -0.0443561 4.58843 0.00966065 3.86349C0.0437765 3.41716 0.211513 3.03621 0.538456 2.72349C0.89383 2.38803 1.2293 2.03551 1.57899 1.69437C2.03387 1.24519 2.60531 1.24803 3.06019 1.69437C3.34164 1.97013 3.62025 2.25157 3.89887 2.53302C4.16895 2.80309 4.44188 3.07317 4.71196 3.34609C5.18674 3.82654 5.18958 4.38659 4.7148 4.86419C4.37365 5.20534 4.03533 5.54933 3.68849 5.88479C3.59751 5.97292 3.58898 6.04684 3.63731 6.15771C3.86475 6.70355 4.19454 7.18968 4.56413 7.64454C5.30899 8.55996 6.15051 9.37302 7.15409 10.0013C7.37015 10.1349 7.60612 10.2344 7.83072 10.3567C7.94728 10.4192 8.02404 10.3993 8.11786 10.3026C8.45617 9.95297 8.80302 9.60898 9.14986 9.26499C9.60474 8.81582 10.1733 8.81297 10.6282 9.26499C11.1854 9.81651 11.7398 10.3709 12.2914 10.9281C12.7548 11.3943 12.7519 11.9657 12.2857 12.4348C11.9701 12.7532 11.6375 13.0546 11.3418 13.3872C10.9097 13.8705 10.3638 14.0297 9.74405 13.9956C8.83998 13.9472 8.00698 13.6459 7.20242 13.2564C5.41702 12.3893 3.89318 11.1868 2.61668 9.66868C1.67281 8.5429 0.89383 7.32045 0.382092 5.93881ZM14 6.95656C14 3.1215 10.8784 0 7.04321 0V1.32479C10.1478 1.32479 12.6752 3.85212 12.6752 6.95656H14ZM10.1904 6.95656H11.5152C11.5152 4.49177 9.50808 2.48469 7.04321 2.48469V3.80948C7.88473 3.80948 8.67509 4.13641 9.26927 4.73058C9.86345 5.32474 10.1904 6.11507 10.1904 6.95656Z" fill="#4F9844"/>
+        </svg>        
+        Позвонить        
+    </a>
+</div>
+<div class="fix" id="fix">
+    <div class="fix__wrapper">
+        <a href="#quiz-sec" class="fix__link fix__link_1 scroll-to">
+            <div class="fix__img"><img src="<%=require('@img/fix-1.png') %>" alt=""></div>
+            <div class="fix__txt">
+                Рассчитать
+                стоимость
+            </div>
+        </a>
+        <div class="fix__link fix__link_2" id="knowprice">
+            <div class="fix__img"><img src="<%=require('@img/fix-2.png') %>" alt=""></div>
+            <div class="fix__txt">
+                Заказать
+                замер
+            </div>
+        </div>
+        <div class="fix__link fix__link_3" id="openGift2">
+            <div class="fix__img"><img src="<%=require('@img/fix-3.png') %>" alt=""></div>
+            <div class="fix__txt">
+                Акции
+            </div>
+        </div>
+        <a href="#section-1" class="fix__link fix__link_4 fix__top scroll-to">
+            <i>
+                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.0099 1.63151e-06C13.6538 1.60022e-06 13.2473 0.144739 12.9419 0.38608L0.483845 11.4846C-0.126237 12.0154 -0.177305 12.9323 0.433123 13.5113C0.992482 14.0903 1.95869 14.1387 2.56879 13.5595L14.0099 3.426L25.4509 13.6077C26.061 14.1385 27.0272 14.1385 27.5866 13.5596C28.146 12.9806 28.146 12.0638 27.5359 11.5329L15.0778 0.434337C14.7724 0.144862 14.366 0.000121826 14.0098 0.000121794L14.0099 1.63151e-06Z" fill="#715531"/>
+                </svg>                    
+            </i>
+            <div class="fix__txt">
+                Наверх
+            </div>
+        </a>
+    </div>
+</div>
+<main class="homepage" id="root">
+    <section class="first" id="section-1">
+        <div class="container">
+            <h1 class="first__title">
+                <span class="first__title-card">
+                    Нужен качественный ремонт?
+                </span> <br>
+                Узнайте реальную стоимость ремонта квартиры, <strong>за который
+                не придется переживать </strong>
+            </h1>
+            <div class="first__rate">
+                <div class="first__rate-image">
+                    <i>
+                        <img src="<%=require('@img/star.svg') %>" alt="">
+                    </i>
+                    <i>
+                        <img src="<%=require('@img/star.svg') %>" alt="">
+                    </i>
+                    <i>
+                        <img src="<%=require('@img/star.svg') %>" alt="">
+                    </i>
+                    <i>
+                        <img src="<%=require('@img/star.svg') %>" alt="">
+                    </i>
+                    <i>
+                        <img src="<%=require('@img/star.svg') %>" alt="">
+                    </i>
+                </div>
+                <p class="first__rate-txt">
+                    От компании с безупречной репутацией
+                    по мнению 900 наших клиентов!
+                </p>
+            </div>
+            <div class="first__cards">
+                <div class="first__cards-item">
+                    <div class="first__cards-img">
+                        <img src="<%=require('@img/first-1.png') %>" alt="">
+                    </div>
+                    <div class="first__cards-content">
+                        <h3 class="first__cards-title">
+                            <strong>Ремонт без рисков</strong> <br>
+                            оплачиваете только
+                            готовую работу
+                        </h3>
+                    </div>
+                </div>
+                <div class="first__cards-item">
+                    <div class="first__cards-img">
+                        <img src="<%=require('@img/first-2.png') %>" alt="">
+                    </div>
+                    <div class="first__cards-content">
+                        <h3 class="first__cards-title">
+                            <strong>
+                                Страхуем ремонт
+                                до 15 млн. руб.  <br>
+                            </strong>
+                            от любых ущербов
+                        </h3>
+                    </div>
+                </div>
+                <div class="first__cards-item">
+                    <div class="first__cards-img">
+                        <img src="<%=require('@img/first-3.png') %>" alt="">
+                    </div>
+                    <div class="first__cards-content">
+                        <h3 class="first__cards-title">
+                            <strong>
+                                Фиксированная
+                                цена
+                            </strong> по договору
+                            без изменений
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <p class="first__txt">
+                Делая расчет стоимости на этом сайте, Вы получите <strong>базовый дизайн квартиры с учетом всех ваших пожеланий в подарок!</strong>
+            </p>
+            <div class="first__button-wrapper">
+                <a href="#quiz-sec" class="first__button scroll-to" >
+                    <div class="linear-bg"></div>
+                    <span>УЗНАТЬ СТОИМОСТЬ</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <h2 class="feedback__title">
+                Каждый кто обращается в Domeo получает <strong>качественный ремонт по адекватной цене</strong>
+            </h2>
+            <p class="feedback__subtitle">
+                Выкладываемся на 101% для достижения идеального результата
+            </p>
+            <div class="feedback__row">
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Мне принесли не просто картинки, а мощный дизайн где учли все мои пожелания!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video1">
+                            <img src="<%=require('@img/video-1.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Юлия -</strong> увидела отзывы о Domeo
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Я отдыхал в Кореллии и наблюдал дистанционно как меняется моя квартира. <br> Я безумно рад результату!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video2">
+                            <img src="<%=require('@img/video-2.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Павел -</strong> узнал о Domeo по рекомендации друга
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Смотришь на их работу и глаз радуется, они настоящие труженики. Domeo forever!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video3">
+                            <img src="<%=require('@img/video-3.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Анатолию -</strong> супруга посоветовала Domeo
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Мои друзья согласились, что в Domeo лучшее соотношение цены и качества. Я осталась очень довольна!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video4">
+                            <img src="<%=require('@img/video-4.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Полина -</strong> прочитала отзывы о Domeo
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        После знакомства доверие было <br>
+на 100%. Все капризы были выполнены. Domeo - это качество!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video5">
+                            <img src="<%=require('@img/video-5.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Светлана -</strong> узнала о Domeo от подруги
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Все было быстро и грамотно под чутким руководством, ровно так как я и хотел!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video6">
+                            <img src="<%=require('@img/video-6.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Илье - </strong> посоветовали друзья обратиться в Domeo
+                    </p>
+                </div>
+            </div>
+            <div class="feedback__row feedback__row_hidden" id="hidden-feedback">
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Получив дизайн-проект я понял,
+                        что с этими ребятами можно идти
+                        дальше. Я рад нашему сотрудничеству!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video7">
+                            <img src="<%=require('@img/video-7.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Антон</strong> - узнал о Domeo в интернете
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Удивили скоростью работы и качеством. Дизайнер показал как все реализуют. <br>
+                        Ребятам большое спасибо!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video8">
+                            <img src="<%=require('@img/video-8.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Елена</strong> -  узнала о Domeo по рекомендациям
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Нам показали дизайн в 3D и мы влюбились. Подобрали мебель, которую сами не могли найти. Спасибо большое Domeo!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video9">
+                            <img src="<%=require('@img/video-9.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Юлия</strong> - посоветовали Domeo коллеги
+                    </p>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">
+                        Они помогли мне принять квартиру
+                        от застройщика, сделали дизайн и ремонт.
+                        Я остался очень доволен!
+                    </p>
+                    <div class="feedback__item-video">
+                        <button class="open-player" id="video10">
+                            <img src="<%=require('@img/video-10.jpg') %>" alt="">
+                        </button>
+                    </div>
+                    <p class="feedback__item-info">
+                        <i class="circle-pulse">
+                                                        
+                        </i>
+                        <strong>Салим</strong> - узнал о Domeo в интернете
+                    </p>
+                </div>
+            </div>
+            <div class="feedback__more-wrapper">
+                <button class="feedback__more" onclick="openMore();">
+                    Показать ещё <i>
+                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.3989 15.0149C2.19863 11.9884 2.78905 8.65315 4.75249 6.25197L4.73365 7.59417L7.43389 7.65092L7.53657 1.69744L1.58802 1.59639L1.53187 4.29864L2.84553 4.31674C0.126244 7.47413 -0.720221 11.9556 0.888115 16.0118C2.64789 20.4528 6.89695 23.2458 11.5096 23.2458C12.288 23.2458 13.0772 23.166 13.8664 23.0014L13.3146 20.3555C9.14147 21.227 4.9705 18.9809 3.39872 15.015L3.3989 15.0149ZM22.1874 7.55416C20.13 2.36664 14.6729 -0.573171 9.21193 0.565398L9.7626 3.21147C13.9348 2.34193 18.1052 4.58722 19.677 8.55102C20.8784 11.58 20.2872 14.9181 18.3215 17.3198L18.3385 15.9663L15.6379 15.9152L15.5457 21.8682L21.4933 21.9596L21.5442 19.2574L20.2403 19.241C22.9521 16.0844 23.7947 11.6074 22.1872 7.55459L22.1874 7.55416Z" fill="#8A7354"/>
+                        </svg>                        
+                    </i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-price">
+        <div class="container">
+            <h2 class="get-price__title">
+                Узнайте стоимость Вашего <strong>ремонта ответив на 4 вопроса</strong>
+            </h2>
+            <p class="get-price__subtitle" id="quiz-sec">
+                Выбирайте вариант ответа и нажимайте кнопку <strong>«Далее»</strong>
+            </p>
+            <div class="get-price__row">
+                <form class="get-price__quiz quiz">
+                    <div class="quiz__progress" id="bar">
+                        <div class="quiz__progress-bar"></div>
+                        <div class="quiz__progress-count">
+                            вы прошли расчет на <span id="progressPercent">0</span>%
+                        </div>
+                    </div>
+                    <div class="quiz__block quiz__block-1 active" id="quiz1">
+                        <div class="quiz__count">
+                            Вопрос 1 <strong>из 4</strong>
+                        </div>
+                        <h3 class="quiz__title">
+                            Какой тип ремонта необходим?
+                        </h3>
+                        <div class="quiz-first">
+                            <div class="quiz-first__item">
+                                <input type="radio" name="first" id="first-1" checked>
+                                <label class="quiz-first__label" for="first-1">
+                                    <div class="quiz-first__image">
+                                        <div class="quiz-first__pic"><img src="<%=require('@img/first-1.jpg') %>" alt=""></div class="quiz-first__pic">
+                                    </div>
+                                    <p class="quiz-first__txt">
+                                        Косметический
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="quiz-first__item">
+                                <input type="radio" name="first" id="first-2">
+                                <label class="quiz-first__label" for="first-2">
+                                    <div class="quiz-first__image">
+                                        <div class="quiz-first__pic"><img src="<%=require('@img/first-2.jpg') %>" alt=""></div>
+                                    </div>
+                                    <p class="quiz-first__txt">
+                                        Капитальный
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="quiz-first__item">
+                                <input type="radio" name="first" id="first-3">
+                                <label class="quiz-first__label" for="first-3">
+                                    <div class="quiz-first__image">
+                                        <div class="quiz-first__pic"><img src="<%=require('@img/first-3.jpg') %>" alt=""></div>
+                                    </div>
+                                    <p class="quiz-first__txt">
+                                        Дизайнерский
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__buttons">
+                            <button class="quiz__next" id="next1">
+                                <div class="linear-bg"></div>
+                <span>ДАЛЕЕ</span>
+                                <i>
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.99886 7.70313C8.9964 8.00883 8.87507 8.30172 8.66049 8.5196L3.0117 14.1684C2.79121 14.3899 2.49192 14.5146 2.17947 14.5153C1.86704 14.516 1.5671 14.3925 1.34577 14.1722C1.12429 13.9517 0.999516 13.6524 0.99886 13.3399C0.998204 13.0275 1.12167 12.7276 1.34199 12.5062L6.15943 7.68879L1.34199 2.87135V2.87119C1.04516 2.57304 0.929906 2.13894 1.03974 1.73277C1.14958 1.32643 1.46777 1.00957 1.87441 0.901549C2.28124 0.79352 2.71467 0.910743 3.01169 1.20906L8.66048 6.85784C8.88228 7.08293 9.00427 7.3878 8.99885 7.70369L8.99886 7.70313Z" fill="#A7901D"/>
+                                    </svg>                                        
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quiz__block quiz__block-2" id="quiz2">
+                        <div class="quiz__count">
+                            Вопрос 2 <strong>из 4</strong>
+                        </div>
+                        <h3 class="quiz__title">
+                            Укажите общую площадь
+                        </h3>
+                        <p class="quiz__subtitle">
+                            Если не можете уточнить нажмите кнопку <strong>«Далее»</strong>
+                        </p>
+                        <div class="quiz-2">
+                            <div class="quiz-2__info">
+                                <input type="count" class="quiz-2__control" id="slider-range-value">
+                                <label for="slider-range-value" class="quiz-2__label">
+                                    м²
+                                </label>
+                            </div>
+                            <div class="quiz-2__header">
+                                <span>От</span>
+                                <span>До</span>
+                            </div>
+                            <div id="slider"></div>
+                            <div class="quiz-2__footer">
+                                <span>
+                                    20м²
+                                </span>
+                                <span>
+                                    500м²
+                                </span>
+                            </div>
+                        </div>
+                        <div class="quiz__buttons">
+                            <button class="quiz__back" id="back2">
+                                <i>
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.000165905 6.81213C0.00262864 6.50643 0.123956 6.21354 0.338538 5.99566L5.98733 0.34687C6.20782 0.125394 6.50711 0.000616258 6.81956 -3.98156e-05C7.13199 -0.000695889 7.43193 0.122767 7.65326 0.343095C7.87473 0.563587 7.99951 0.862875 8.00017 1.17532C8.00082 1.48777 7.87736 1.7877 7.65703 2.00903L2.83959 6.82647L7.65703 11.6439L7.65703 11.6441C7.95386 11.9422 8.06912 12.3763 7.95928 12.7825C7.84945 13.1888 7.53125 13.5057 7.12461 13.6137C6.71778 13.7217 6.28436 13.6045 5.98733 13.3062L0.338547 7.65742C0.116744 7.43233 -0.00524344 7.12746 0.000174242 6.81157L0.000165905 6.81213Z" fill="#C7C7C7"/>
+                                    </svg>                                        
+                                </i>
+                                НАЗАД
+                            </button>
+                            <button class="quiz__next" id="next2">
+                                <div class="linear-bg"></div>
+                <span>ДАЛЕЕ</span>
+                                <i>
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.99886 7.70313C8.9964 8.00883 8.87507 8.30172 8.66049 8.5196L3.0117 14.1684C2.79121 14.3899 2.49192 14.5146 2.17947 14.5153C1.86704 14.516 1.5671 14.3925 1.34577 14.1722C1.12429 13.9517 0.999516 13.6524 0.99886 13.3399C0.998204 13.0275 1.12167 12.7276 1.34199 12.5062L6.15943 7.68879L1.34199 2.87135V2.87119C1.04516 2.57304 0.929906 2.13894 1.03974 1.73277C1.14958 1.32643 1.46777 1.00957 1.87441 0.901549C2.28124 0.79352 2.71467 0.910743 3.01169 1.20906L8.66048 6.85784C8.88228 7.08293 9.00427 7.3878 8.99885 7.70369L8.99886 7.70313Z" fill="#A7901D"/>
+                                    </svg>                                        
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quiz__block quiz__block-3" id="quiz3">
+                        <div class="quiz__count">
+                            Вопрос 3 <strong>из 4</strong>
+                        </div>
+                        <h3 class="quiz__title">
+                            Опишите какой стиль Вам нравится
+                        </h3>
+                        <div class="quiz-first">
+                            <div class="quiz-first__item">
+                                <input type="radio" name="th" id="th-1" checked>
+                                <label class="quiz-first__label" for="th-1">
+                                    <div class="quiz-first__image">
+                                        <div class="quiz-first__pic"><img src="<%=require('@img/quiz-3-1.png') %>" alt=""></div>
+                                    </div>
+                                    <p class="quiz-first__txt">
+                                        Более классический
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="quiz-first__item">
+                                <input type="radio" name="th" id="th-2">
+                                <label class="quiz-first__label" for="th-2">
+                                    <div class="quiz-first__image">
+                                        <div class="quiz-first__pic"><img src="<%=require('@img/quiz-3-2.png') %>" alt=""></div>
+                                    </div>
+                                    <p class="quiz-first__txt">
+                                        Баланс
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="quiz-first__item">
+                                <input type="radio" name="th" id="th-3">
+                                <label class="quiz-first__label" for="th-3">
+                                    <div class="quiz-first__image">
+                                        <div class="quiz-first__pic"><img src="<%=require('@img/quiz-3-3.png') %>" alt=""></div>
+                                    </div>
+                                    <p class="quiz-first__txt">
+                                        Более современный
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__buttons">
+                            <button class="quiz__back" id="back3">
+                                <i>
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.000165905 6.81213C0.00262864 6.50643 0.123956 6.21354 0.338538 5.99566L5.98733 0.34687C6.20782 0.125394 6.50711 0.000616258 6.81956 -3.98156e-05C7.13199 -0.000695889 7.43193 0.122767 7.65326 0.343095C7.87473 0.563587 7.99951 0.862875 8.00017 1.17532C8.00082 1.48777 7.87736 1.7877 7.65703 2.00903L2.83959 6.82647L7.65703 11.6439L7.65703 11.6441C7.95386 11.9422 8.06912 12.3763 7.95928 12.7825C7.84945 13.1888 7.53125 13.5057 7.12461 13.6137C6.71778 13.7217 6.28436 13.6045 5.98733 13.3062L0.338547 7.65742C0.116744 7.43233 -0.00524344 7.12746 0.000174242 6.81157L0.000165905 6.81213Z" fill="#C7C7C7"/>
+                                    </svg>                                        
+                                </i>
+                                НАЗАД
+                            </button>
+                            <button class="quiz__next" id="next3">
+                                <div class="linear-bg"></div>
+                <span>ДАЛЕЕ</span>
+                                <i>
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.99886 7.70313C8.9964 8.00883 8.87507 8.30172 8.66049 8.5196L3.0117 14.1684C2.79121 14.3899 2.49192 14.5146 2.17947 14.5153C1.86704 14.516 1.5671 14.3925 1.34577 14.1722C1.12429 13.9517 0.999516 13.6524 0.99886 13.3399C0.998204 13.0275 1.12167 12.7276 1.34199 12.5062L6.15943 7.68879L1.34199 2.87135V2.87119C1.04516 2.57304 0.929906 2.13894 1.03974 1.73277C1.14958 1.32643 1.46777 1.00957 1.87441 0.901549C2.28124 0.79352 2.71467 0.910743 3.01169 1.20906L8.66048 6.85784C8.88228 7.08293 9.00427 7.3878 8.99885 7.70369L8.99886 7.70313Z" fill="#A7901D"/>
+                                    </svg>                                        
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quiz__block quiz__block-4" id="quiz4">
+                        <div class="quiz__count">
+                            Вопрос 4 <strong>из 4</strong>
+                        </div>
+                        <h3 class="quiz__title">
+                            Когда планируете начать ремонт?
+                        </h3>
+                        <div class="quiz-4">
+                            <div class="quiz-4__item">
+                                <input type="radio" name="when" id="when-1" checked>
+                                <label for="when-1" class="quiz-4__label">
+                                    <div class="quiz-4__icon">
+                                    </div>
+                                    В ближайшее время
+                                </label>
+                            </div>
+                            <div class="quiz-4__item">
+                                <input type="radio" name="when" id="when-2">
+                                <label for="when-2" class="quiz-4__label">
+                                    <div class="quiz-4__icon">
+                                    </div>
+                                    В течение месяца
+                                </label>
+                            </div>
+                            <div class="quiz-4__item">
+                                <input type="radio" name="when" id="when-3">
+                                <label for="when-3" class="quiz-4__label">
+                                    <div class="quiz-4__icon">
+                                    </div>
+                                    В течение 3-х месяцев
+                                </label>
+                            </div>
+                            <div class="quiz-4__item">
+                                <input type="radio" name="when" id="when-4">
+                                <label for="when-4" class="quiz-4__label">
+                                    <div class="quiz-4__icon">
+                                    </div>
+                                    Пока просто интересуюсь
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__buttons">
+                            <button class="quiz__back" id="back4">
+                                <i>
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.000165905 6.81213C0.00262864 6.50643 0.123956 6.21354 0.338538 5.99566L5.98733 0.34687C6.20782 0.125394 6.50711 0.000616258 6.81956 -3.98156e-05C7.13199 -0.000695889 7.43193 0.122767 7.65326 0.343095C7.87473 0.563587 7.99951 0.862875 8.00017 1.17532C8.00082 1.48777 7.87736 1.7877 7.65703 2.00903L2.83959 6.82647L7.65703 11.6439L7.65703 11.6441C7.95386 11.9422 8.06912 12.3763 7.95928 12.7825C7.84945 13.1888 7.53125 13.5057 7.12461 13.6137C6.71778 13.7217 6.28436 13.6045 5.98733 13.3062L0.338547 7.65742C0.116744 7.43233 -0.00524344 7.12746 0.000174242 6.81157L0.000165905 6.81213Z" fill="#C7C7C7"/>
+                                    </svg>                                        
+                                </i>
+                                НАЗАД
+                            </button>
+                            <button class="quiz__next" id="next4">
+                                <div class="linear-bg"></div>
+                <span>ДАЛЕЕ</span>
+                                <i>
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.99886 7.70313C8.9964 8.00883 8.87507 8.30172 8.66049 8.5196L3.0117 14.1684C2.79121 14.3899 2.49192 14.5146 2.17947 14.5153C1.86704 14.516 1.5671 14.3925 1.34577 14.1722C1.12429 13.9517 0.999516 13.6524 0.99886 13.3399C0.998204 13.0275 1.12167 12.7276 1.34199 12.5062L6.15943 7.68879L1.34199 2.87135V2.87119C1.04516 2.57304 0.929906 2.13894 1.03974 1.73277C1.14958 1.32643 1.46777 1.00957 1.87441 0.901549C2.28124 0.79352 2.71467 0.910743 3.01169 1.20906L8.66048 6.85784C8.88228 7.08293 9.00427 7.3878 8.99885 7.70369L8.99886 7.70313Z" fill="#A7901D"/>
+                                    </svg>                                        
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quiz__block quiz__block-5" id="quiz5">
+                        <div class="quiz-5">
+                            <div class="quiz-5__content">
+                                <div class="quiz-5__header">
+                                    <h3 class="quiz-5__title">
+                                        Готово!
+                                    </h3>
+                                    <p class="quiz-5__txt">
+                                        Укажите на какой номер отправить расчет стоимости Вашего ремонта
+                                    </p>
+                                    <p class="quiz-5__subtitle">
+                                        мы можем перезвонить с уточняющими вопросами
+                                    </p>
+                                </div>
+                                <div class="quiz-5__body">
+                                    <h3 class="quiz-5__body-title">
+                                        Где Вам удобнее получить расчет?
+                                    </h3>
+                                    <div class="quiz-5__body-row">
+                                        <div class="quiz-5__item">
+                                            <input type="radio" name="how" id="how-1" checked>
+                                            <label class="quiz-5__label quiz-5__label_wa" for="how-1">
+                                                <img src="<%=require('@img/wa.svg') %>" alt="">
+                                                Whatsapp
+                                            </label>
+                                            <img src="<%=require('@img/quiz-wa.jpg') %>" class="quiz-5__label-img" alt="">
+                                        </div>
+                                        <div class="quiz-5__item">
+                                            <input type="radio" name="how" id="how-2">
+                                            <label class="quiz-5__label quiz-5__label_tg" for="how-2">
+                                                <img src="<%=require('@img/tg.svg') %>" alt="">
+                                                Telegram
+                                            </label>
+                                            <img src="<%=require('@img/quiz-tg.jpg') %>" class="quiz-5__label-img" alt="">
+                                        </div>
+                                        <div class="quiz-5__item">
+                                            <input type="radio" name="how" id="how-3">
+                                            <label class="quiz-5__label quiz-5__label_tel" for="how-3">
+                                                <img src="<%=require('@img/tel.svg') %>" alt="">
+                                                По телефону
+                                            </label>
+                                            <img src="<%=require('@img/quiz-phone.jpg') %>"  class="quiz-5__label-img" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="quiz-5__body-form">
+                                        <input type="tel" placeholder="+7(___)___-__-__" class="quiz-5__body-control js--mask" required>
+                                        <button class="quiz-5__body-btn" type="submit">
+                                            
+                                            <div class="linear-bg"></div>
+                <span>УЗНАТЬ СТОИМОСТЬ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__buttons quiz__buttons_finish">
+                            <button class="quiz__back" id="back5">
+                                <i>
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.000165905 6.81213C0.00262864 6.50643 0.123956 6.21354 0.338538 5.99566L5.98733 0.34687C6.20782 0.125394 6.50711 0.000616258 6.81956 -3.98156e-05C7.13199 -0.000695889 7.43193 0.122767 7.65326 0.343095C7.87473 0.563587 7.99951 0.862875 8.00017 1.17532C8.00082 1.48777 7.87736 1.7877 7.65703 2.00903L2.83959 6.82647L7.65703 11.6439L7.65703 11.6441C7.95386 11.9422 8.06912 12.3763 7.95928 12.7825C7.84945 13.1888 7.53125 13.5057 7.12461 13.6137C6.71778 13.7217 6.28436 13.6045 5.98733 13.3062L0.338547 7.65742C0.116744 7.43233 -0.00524344 7.12746 0.000174242 6.81157L0.000165905 6.81213Z" fill="#C7C7C7"/>
+                                    </svg>                                        
+                                </i>
+                                НАЗАД
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="get-price__aside aside" id="aside">
+                    <div class="aside__top">
+                        <div class="aside__avatar">
+                            <img src="<%=require('@img/aside-avatar.png') %>" alt="">
+                        </div>
+                        <h3 class="aside__title">
+                            Константин Горбань
+                        </h3>
+                        <p class="aside__position">
+                            Руководитель ГК «Domeo»
+                        </p>
+                        <p class="aside__txt">
+                            Ответьте на все вопросы, чтобы
+                            мы рассчитали стоимость ремонта 
+                        </p>
+                    </div>
+                    <div class="aside__gifts">
+                        <h3 class="aside__gifts-title" id="asideTitle">
+                            ПРОЙДЯ ТЕСТ НА ЭТОМ САЙТЕ 
+                            <strong>ВЫ ПОЛУЧИТЕ 3 ПОДАРКА:</strong>
+                        </h3>
+                        <div class="aside__gifts-wrapper">
+                            <div class="aside__gifts-card aside__gifts-card_1">
+                                <img src="<%=require('@img/quiz-mob-1.png') %>" alt="">
+                                <span>
+                                    Базовый дизайн
+                                    по вашим пожеланиям
+                                </span>
+                            </div>
+                            <div class="aside__gifts-card aside__gifts-card_2">
+                                <img src="<%=require('@img/quiz-mob-2.png') %>" alt="">
+                                <span>
+                                    Рассрочка 0%
+                                    на 12 месяцев
+                                </span>
+                            </div>
+                            <div class="aside__gifts-card aside__gifts-card_3">
+                                <img src="<%=require('@img/quiz-mob-3.png') %>" alt="">
+                                <span>Расширенную гарантию на 5 лет по договору</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="repair">
+        <div class="container">
+            <h2 class="repair__title">
+                Ремонт от Domeo соответствует <br>
+                <strong>высоким требованиям клиентов</strong>
+            </h2>
+            <p class="repair__subtitle">
+                Знаем какой ремонт будет радовать Вас каждый день
+            </p>
+            <div class="works__help repair__help">
+                Посмотрите больше работ нажимая
+                <img src="<%=require('@img/point.png') %>" alt="">
+            </div>
+            <div class="repair__wrapper">
+                <div class="repair__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide repair__item js--look-1">
+                           <div class="repair__item-image">
+                                <span class="repair__item-location">
+                                    <img src="<%=require('@img/zk.svg') %>" alt="">
+                                    ЖК «Грильяж»
+                                </span>
+                            <a href="<%=require('@img/big-1-0.jpg') %>" class=""><img src="<%=require('@img/repair-1.png') %>" class="repair__item-pic" alt=""></a>
+                               <div class="repair__item-bottom">
+                                Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                               </div>
+                           </div>
+                           <div class="repair__item-list repair-list">
+                            <a href="<%=require('@img/big-1-x.jpg') %>" class="repair-list__item">
+                                <img src="<%=require('@img/repair-1-0.png') %>" alt="">
+                               </a>
+                               <a href="<%=require('@img/big-1-1.jpg') %>" class="repair-list__item">
+                                <img src="<%=require('@img/repair-1-1.png') %>" alt="">
+                               </a>
+                               <a href="<%=require('@img/big-1-2.jpg') %>" class="repair-list__item">
+                                <img src="<%=require('@img/repair-1-2.png') %>" alt="">
+                               </a>
+                               <a href="<%=require('@img/big-1-3.jpg') %>" class="repair-list__item">
+                                <img src="<%=require('@img/repair-1-3.png') %>" alt="">
+                               </a>
+                               <a href="<%=require('@img/big-1-4.jpg') %>" class="repair-list__item">
+                                <img src="<%=require('@img/repair-1-4.png') %>" alt="">
+                               </a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Кленовые Аллеи»
+                                 </span>
+                                 <a href="<%=require('@img/big-2-0.jpg') %>" class=""><img src="<%=require('@img/repair-2.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-2-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-2-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-2-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-2-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-2-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-2-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-2-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-2-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-2-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-2-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Скандинавия»
+                                 </span>
+                                 <a href="<%=require('@img/big-3-0.jpg') %>" class=""><img src="<%=require('@img/repair-3.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-3-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-3-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-3-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-3-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-3-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-3-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-3-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-3-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-3-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-3-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     УЛ. «Домодедовская»
+                                 </span>
+                                 <a href="<%=require('@img/big-4-0.jpg') %>" class=""><img src="<%=require('@img/repair-4.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-4-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-4-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-4-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-4-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-4-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-4-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-4-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-4-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-4-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-4-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Огни»
+                                 </span>
+                                 <a href="<%=require('@img/big-5-0.jpg') %>" class=""><img src="<%=require('@img/repair-5.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-5-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-5-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-5-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-5-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-5-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-5-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-5-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-5-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-5-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-5-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Neva Towers»
+                                 </span>
+                                 <a href="<%=require('@img/big-6-0.jpg') %>" class=""><img src="<%=require('@img/repair-6.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-6-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-6-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-6-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-6-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-6-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-6-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-6-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-6-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-6-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-6-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Рассказово»
+                                 </span>
+                                 <a href="<%=require('@img/big-7-0.jpg') %>" class=""><img src="<%=require('@img/repair-7.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-7-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-7-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-7-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-7-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-7-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-7-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-7-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-7-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-7-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-7-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Городские Истории»
+                                 </span>
+                                 <a href="<%=require('@img/big-8-0.jpg') %>" class=""><img src="<%=require('@img/repair-8.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-8-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-8-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-8-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-8-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-8-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-8-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-8-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-8-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-8-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-8-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     УЛ. «Малая Филевская»
+                                 </span>
+                                 <a href="<%=require('@img/big-9-0.jpg') %>" class=""><img src="<%=require('@img/repair-9.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-9-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-9-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-9-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-9-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-9-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-9-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-9-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-9-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-9-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-9-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Город Парк»
+                                 </span>
+                                 <a href="<%=require('@img/big-10-0.jpg') %>" class=""><img src="<%=require('@img/repair-10.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-10-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-10-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-10-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-10-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-10-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-10-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-10-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-10-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-10-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-10-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ПР. «Волгоградский»
+                                 </span>
+                                 <a href="<%=require('@img/big-11-0.jpg') %>" class=""><img src="<%=require('@img/repair-11.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-11-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-11-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-11-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-11-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-11-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-11-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-11-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-11-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-11-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-11-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                         <div class="swiper-slide repair__item js--look-1">
+                            <div class="repair__item-image">
+                                 <span class="repair__item-location">
+                                     <img src="<%=require('@img/zk.svg') %>" alt="">
+                                     ЖК «Редсайд»
+                                 </span>
+                                 <a href="<%=require('@img/big-12-0.jpg') %>" class=""><img src="<%=require('@img/repair-12.png') %>" class="repair__item-pic" alt=""></a>
+                                <div class="repair__item-bottom">
+                                 Нажмите   <img src="<%=require('@img/lupa.svg') %>" alt="">  ,чтобы посмотреть ближе
+                                </div>
+                            </div>
+                            <div class="repair__item-list repair-list">
+                                <a href="<%=require('@img/big-12-x.jpg') %>" class="repair-list__item">
+                                    <img src="<%=require('@img/repair-12-0.png') %>" alt="">
+                                   </a>
+                                <a href="<%=require('@img/big-12-1.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-12-1.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-12-2.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-12-2.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-12-3.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-12-3.png') %>" alt="">
+                                </a>
+                                <a href="<%=require('@img/big-12-4.jpg') %>" class="repair-list__item">
+                                 <img src="<%=require('@img/repair-12-4.png') %>" alt="">
+                                </a>
+                                
+                            </div>
+                         </div>
+                    </div>
+                    <div class="repair__pagination"></div>
+                </div>
+                <div class="repair__arrow repair__arrow_prev arrow-default">
+                    <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.000304017 12.6426C0.00484961 13.1936 0.228793 13.7216 0.624867 14.1143L11.0513 24.2967C11.4583 24.6959 12.0107 24.9208 12.5874 24.922C13.1641 24.9232 13.7177 24.7006 14.1263 24.3035C14.5351 23.906 14.7654 23.3665 14.7666 22.8033C14.7678 22.2401 14.5399 21.6995 14.1332 21.3005L5.24127 12.6167L14.1332 3.93293V3.93263C14.6811 3.39519 14.8939 2.61271 14.6911 1.88055C14.4884 1.14809 13.9011 0.576924 13.1505 0.382217C12.3996 0.187487 11.5996 0.398789 11.0513 0.936519L0.624883 11.1189C0.215482 11.5246 -0.00968037 12.0742 0.000319405 12.6436L0.000304017 12.6426Z" fill="#8A7354"/>
+                    </svg>    
+                </div>
+                <div class="repair__arrow repair__arrow_next arrow-default">
+                    <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.9997 12.6426C14.9952 13.1936 14.7712 13.7216 14.3751 14.1143L3.94868 24.2967C3.5417 24.6959 2.98928 24.9208 2.41257 24.922C1.83589 24.9232 1.28226 24.7006 0.873735 24.3035C0.46494 23.906 0.234627 23.3665 0.233417 22.8033C0.232206 22.2401 0.46009 21.6995 0.866768 21.3005L9.75873 12.6167L0.866768 3.93293V3.93263C0.318875 3.39519 0.106141 2.61271 0.308875 1.88055C0.511609 1.14809 1.09893 0.576924 1.84949 0.382217C2.60042 0.187487 3.40043 0.398789 3.94867 0.936519L14.3751 11.1189C14.7845 11.5246 15.0097 12.0742 14.9997 12.6436L14.9997 12.6426Z" fill="#8A7354"/>
+                    </svg>   
+                </div>
+            </div>
+            <div class="repair__btn-wrapper">
+                <a class="repair__btn scroll-to" href="#quiz-sec">
+                    
+                    <div class="linear-bg"></div>
+                <span>УЗНАЙТЕ СТОИМОСТЬ <br>
+                    ВАШЕГО РЕМОНТА</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="container">
+            <h2 class="clients__title">
+                <strong>В Domeo</strong> лучшая клиентоориентированность
+                <img src="<%=require('@img/stars.svg') %>" alt="">
+            </h2>
+            <div class="clients__subtitle">
+                <div class="clients__subtitle-popup clients__subtitle-popup_mob">
+                    <span class="clients__subtitle-btn">
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31 15.5C31 24.0604 24.0604 31 15.5 31C6.93959 31 0 24.0604 0 15.5C0 6.93959 6.93959 0 15.5 0C24.0604 0 31 6.93959 31 15.5Z" fill="url(#paint0_linear_403_2564)"/>
+                            <path d="M15.561 8.03717C15.8579 8.03717 16.063 8.09373 16.1761 8.20685C16.2892 8.31998 16.3458 8.52501 16.3458 8.82196V8.97043C16.3458 9.26738 16.2892 9.47242 16.1761 9.58554C16.063 9.69866 15.8579 9.75522 15.561 9.75522H15.4337C15.1368 9.75522 14.9317 9.69866 14.8186 9.58554C14.7055 9.47242 14.6489 9.26738 14.6489 8.97043V8.82196C14.6489 8.52501 14.7055 8.31998 14.8186 8.20685C14.9317 8.09373 15.1368 8.03717 15.4337 8.03717H15.561ZM15.8367 11.9399C16.0912 11.9399 16.2185 12.0672 16.2185 12.3217V22.4603C16.2185 22.7149 16.0912 22.8421 15.8367 22.8421H15.158C14.9035 22.8421 14.7762 22.7149 14.7762 22.4603V12.3217C14.7762 12.0672 14.9035 11.9399 15.158 11.9399H15.8367Z" fill="black"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_403_2564" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FEE355"/>
+                            <stop offset="1" stop-color="#F5D320"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>                          
+                    </span>
+                    <div class="clients__subtitle-drop">
+                        <div class="clients__subtitle-image">
+                            <img src="<%=require('@img/clients-image.png') %>" alt="">
+                        </div>
+                        <div class="clients__subtitle-content">
+                            <h4 class="clients__subtitle-title">
+                                Best of Houzz 2021
+                            </h4>
+                            <p class="clients__subtitle-txt">
+                                Сообщество Houz оценило этого профессионала за лучшее качество обслуживания клиентов
+                            </p>
+                            <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/domeo-domeo-pfvwru-pf~1421370481?yclid=4269681849146802175" class="clients__subtitle-link">
+                                Дата награждения: 20 января 2021г.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <span>по мнению клиентов <br> и мирового портала houzz</span>
+                <div class="clients__subtitle-popup">
+                    <span class="clients__subtitle-btn">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9.5C19 14.7467 14.7467 19 9.5 19C4.25329 19 0 14.7467 0 9.5C0 4.25329 4.25329 0 9.5 0C14.7467 0 19 4.25329 19 9.5Z" fill="url(#paint0_linear_403_2524)"/>
+                            <path d="M9.53776 4.92578C9.71976 4.92578 9.84543 4.96045 9.91476 5.02978C9.98409 5.09911 10.0188 5.22478 10.0188 5.40678V5.49778C10.0188 5.67978 9.98409 5.80545 9.91476 5.87478C9.84543 5.94411 9.71976 5.97878 9.53776 5.97878H9.45976C9.27776 5.97878 9.15209 5.94411 9.08276 5.87478C9.01343 5.80545 8.97876 5.67978 8.97876 5.49778V5.40678C8.97876 5.22478 9.01343 5.09911 9.08276 5.02978C9.15209 4.96045 9.27776 4.92578 9.45976 4.92578H9.53776ZM9.70676 7.31778C9.86276 7.31778 9.94076 7.39578 9.94076 7.55178V13.7658C9.94076 13.9218 9.86276 13.9998 9.70676 13.9998H9.29076C9.13476 13.9998 9.05676 13.9218 9.05676 13.7658V7.55178C9.05676 7.39578 9.13476 7.31778 9.29076 7.31778H9.70676Z" fill="black"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_403_2524" x1="9.5" y1="0" x2="9.5" y2="19" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FEE355"/>
+                            <stop offset="1" stop-color="#F5D320"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>                        
+                    </span>
+                    <div class="clients__subtitle-drop">
+                        <div class="clients__subtitle-image">
+                            <img src="<%=require('@img/clietns-icon.svg') %>" alt="">
+                        </div>
+                        <div class="clients__subtitle-content">
+                            <h4 class="clients__subtitle-title">
+                                Best of Houzz 2021
+                            </h4>
+                            <p class="clients__subtitle-txt">
+                                Сообщество Houz оценило этого профессионала за лучшее качество обслуживания клиентов
+                            </p>
+                            <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/domeo-domeo-pfvwru-pf~1421370481?yclid=4269681849146802175" class="clients__subtitle-link">
+                                Дата награждения: 20 января 2021г.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients__row">
+                <div class="clients__card-wrapper">
+                    <div class="clients__card">
+                        <div class="clients__card-img">
+                            <img src="<%=require('@img/clients-1.svg') %>" alt="">
+                        </div>
+                        <div class="clients__card-rate">
+                            <div class="clients__card-count">
+                                4,7
+                            </div>
+                            <div class="clients__card-stars">
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                            </div>
+                        </div>
+                        <span class="clients__card-link">
+                            105 отзывов
+                        </span>
+                    </div>
+                </div>
+                <div class="clients__card-wrapper">
+                    <div class="clients__card">
+                        <div class="clients__card-img">
+                            <img src="<%=require('@img/clients-2.svg') %>" alt="">
+                        </div>
+                        <div class="clients__card-rate">
+                            <div class="clients__card-count">
+                                4,4
+                            </div>
+                            <div class="clients__card-stars">
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                            </div>
+                        </div>
+                        <span class="clients__card-link">
+                            188 отзывов
+                        </span>
+                    </div>
+                </div>
+                <div class="clients__card-wrapper">
+                    <div class="clients__card">
+                        <div class="clients__card-img">
+                            <img src="<%=require('@img/clients-3.svg') %>" alt="">
+                        </div>
+                        <div class="clients__card-rate">
+                            <div class="clients__card-count">
+                                4,6
+                            </div>
+                            <div class="clients__card-stars">
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                            </div>
+                        </div>
+                        <span class="clients__card-link">
+                            66 отзывов
+                        </span>
+                    </div>
+                </div>
+                <div class="clients__card-wrapper">
+                    <div class="clients__card">
+                        <div class="clients__card-img">
+                            <img src="<%=require('@img/clients-4.svg') %>" alt="">
+                        </div>
+                        <div class="clients__card-rate">
+                            <div class="clients__card-count">
+                                4,3
+                            </div>
+                            <div class="clients__card-stars">
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                                <i>
+                                    <img src="<%=require('@img/star.svg') %>" alt="">
+                                </i>
+                            </div>
+                        </div>
+                        <span class="clients__card-link">
+                            34 отзывов
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="clients__wrapper">
+                <div class="clients__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide clients__item">
+                            <div class="clients__item-image">
+                                <img src="<%=require('@img/feedback-1.png') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide clients__item">
+                            <div class="clients__item-image">
+                                <img src="<%=require('@img/feedback-2.png') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide clients__item">
+                            <div class="clients__item-image">
+                                <img src="<%=require('@img/feedback-3.png') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide clients__item">
+                            <div class="clients__item-image">
+                                <img src="<%=require('@img/feedback-4.png') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide clients__item">
+                            <div class="clients__item-image">
+                                <img src="<%=require('@img/feedback-5.png') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide clients__item">
+                            <div class="clients__item-image">
+                                <img src="<%=require('@img/feedback-6.png') %>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clients__arrow clients__arrow_prev arrow-default">
+                    <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.000304017 12.6426C0.00484961 13.1936 0.228793 13.7216 0.624867 14.1143L11.0513 24.2967C11.4583 24.6959 12.0107 24.9208 12.5874 24.922C13.1641 24.9232 13.7177 24.7006 14.1263 24.3035C14.5351 23.906 14.7654 23.3665 14.7666 22.8033C14.7678 22.2401 14.5399 21.6995 14.1332 21.3005L5.24127 12.6167L14.1332 3.93293V3.93263C14.6811 3.39519 14.8939 2.61271 14.6911 1.88055C14.4884 1.14809 13.9011 0.576924 13.1505 0.382217C12.3996 0.187487 11.5996 0.398789 11.0513 0.936519L0.624883 11.1189C0.215482 11.5246 -0.00968037 12.0742 0.000319405 12.6436L0.000304017 12.6426Z" fill="#8A7354"/>
+                    </svg>                        
+                </div>
+                <div class="clients__arrow clients__arrow_next arrow-default">
+                    <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.9997 12.6426C14.9952 13.1936 14.7712 13.7216 14.3751 14.1143L3.94868 24.2967C3.5417 24.6959 2.98928 24.9208 2.41257 24.922C1.83589 24.9232 1.28226 24.7006 0.873735 24.3035C0.46494 23.906 0.234627 23.3665 0.233417 22.8033C0.232206 22.2401 0.46009 21.6995 0.866768 21.3005L9.75873 12.6167L0.866768 3.93293V3.93263C0.318875 3.39519 0.106141 2.61271 0.308875 1.88055C0.511609 1.14809 1.09893 0.576924 1.84949 0.382217C2.60042 0.187487 3.40043 0.398789 3.94867 0.936519L14.3751 11.1189C14.7845 11.5246 15.0097 12.0742 14.9997 12.6436L14.9997 12.6426Z" fill="#8A7354"/>
+                    </svg>                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="works">
+        <div class="container">
+            <h2 class="works__title">
+                Оцените как <strong>детально мы подходим <br>
+                к работе</strong>, посмотрев видео-ролики
+            </h2>
+            <p class="works__subtitle">
+                Добавьте свой ремонт в нашу «золотую» коллекцию
+            </p>
+            <div class="works__help">
+                Посмотрите больше работ нажимая
+                <img src="<%=require('@img/point.png') %>" alt="">
+            </div>
+            <div class="portfolio__wrapper">
+                <div class="swiper works__slider portfolio">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide portfolio__item">
+                          <div class="portfolio__item-video">
+                            <button class="open-player" id="video11">
+                                <img src="<%=require('@img/video-11.jpg') %>" alt="">
+                            </button>
+                          </div>
+                          <p class="portfolio__item-txt">
+                            <i class="circle-pulse">
+                                                        
+                </i>
+                            Посетите рум тур <strong>с прорабом Domeo</strong>
+                          </p>
+                      </div>
+                      <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video12">
+                                <img src="<%=require('@img/video-12.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <i class="circle-pulse">
+                                                        
+                </i>
+                          <strong>Посетите рум тур</strong> с дизайнером Domeo
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video13">
+                                <img src="<%=require('@img/video-13.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <img src="<%=require('@img/location.svg') %>" alt="">
+                          <strong>Ремонт на</strong> «Озерковской набережной»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video14">
+                                <img src="<%=require('@img/video-14.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <img src="<%=require('@img/location.svg') %>" alt="">
+                          <strong>Ремонт в</strong> ЖК «Концепт Хаус»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video15">
+                                <img src="<%=require('@img/video-15.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <img src="<%=require('@img/location.svg') %>" alt="">
+                          <strong>Ремонт в</strong> ЖК «Лесопарковый»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video16">
+                                <img src="<%=require('@img/video-16.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <img src="<%=require('@img/location.svg') %>" alt="">
+                          <strong>Ремонт на</strong> УЛ «Угрешская»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video17">
+                                <img src="<%=require('@img/video-17.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <i class="circle-pulse">
+                                                        
+                </i>
+                          <strong>Ремонт в</strong> ЖК «ЗИЛ»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video18">
+                                <img src="<%=require('@img/video-18.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <i class="circle-pulse">
+                                                        
+                </i>
+                          <strong>Ремонт в</strong> ЖК «Колизей»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video19">
+                                <img src="<%=require('@img/video-19.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <img src="<%=require('@img/location.svg') %>" alt="">
+                          <strong>Ремонт в</strong> ЖК «Среда»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video20">
+                                <img src="<%=require('@img/video-20.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <img src="<%=require('@img/location.svg') %>" alt="">
+                          <strong>Ремонт на</strong> ПР «Ленинский»
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video21">
+                                <img src="<%=require('@img/video-21.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <i class="circle-pulse">
+                                                        
+                </i>
+                          Посетите рум тур <strong>с дизайнером Валерией</strong>
+                        </p>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <div class="portfolio__item-video">
+                            <button class="open-player" id="video22">
+                                <img src="<%=require('@img/video-22.jpg') %>" alt="">
+                            </button>
+                        </div>
+                        <p class="portfolio__item-txt">
+                          <i class="circle-pulse">
+                                                        
+                </i>
+                          Посетите рум тур <strong>с прорабом Domeo</strong>
+                        </p>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination portfolio__pagination"></div>
+                </div>
+                <div class="portfolio__arrow portfolio__arrow_prev arrow-default">
+                    <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.000304017 12.6426C0.00484961 13.1936 0.228793 13.7216 0.624867 14.1143L11.0513 24.2967C11.4583 24.6959 12.0107 24.9208 12.5874 24.922C13.1641 24.9232 13.7177 24.7006 14.1263 24.3035C14.5351 23.906 14.7654 23.3665 14.7666 22.8033C14.7678 22.2401 14.5399 21.6995 14.1332 21.3005L5.24127 12.6167L14.1332 3.93293V3.93263C14.6811 3.39519 14.8939 2.61271 14.6911 1.88055C14.4884 1.14809 13.9011 0.576924 13.1505 0.382217C12.3996 0.187487 11.5996 0.398789 11.0513 0.936519L0.624883 11.1189C0.215482 11.5246 -0.00968037 12.0742 0.000319405 12.6436L0.000304017 12.6426Z" fill="#8A7354"/>
+                    </svg>
+                </div>
+                <div class="portfolio__arrow portfolio__arrow_next arrow-default">
+                    <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.9997 12.6426C14.9952 13.1936 14.7712 13.7216 14.3751 14.1143L3.94868 24.2967C3.5417 24.6959 2.98928 24.9208 2.41257 24.922C1.83589 24.9232 1.28226 24.7006 0.873735 24.3035C0.46494 23.906 0.234627 23.3665 0.233417 22.8033C0.232206 22.2401 0.46009 21.6995 0.866768 21.3005L9.75873 12.6167L0.866768 3.93293V3.93263C0.318875 3.39519 0.106141 2.61271 0.308875 1.88055C0.511609 1.14809 1.09893 0.576924 1.84949 0.382217C2.60042 0.187487 3.40043 0.398789 3.94867 0.936519L14.3751 11.1189C14.7845 11.5246 15.0097 12.0742 14.9997 12.6436L14.9997 12.6426Z" fill="#8A7354"/>
+                    </svg> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="distant befooter">
+        <div class="container">
+            <h2 class="distant__title">
+                <strong>Узнайте стоимость ремонта</strong> в Domeo дистанционно
+            </h2>
+            <p class="distant__txt">
+                Ответьте на 4 ключевых вопроса от, которых зависит стоимость ремонта
+            </p>
+            <div class="distant__info">
+                <div class="distant__info-icon">
+                    <img src="<%=require('@img/info.svg') %>" alt="">
+                </div>
+                <p class="distant__info-txt">
+                    Рассчет стоимости <strong>бесплатный и не к чему не обязывает,</strong> за интерес к нашей компании мы дарим выгодные условия
+                </p>
+            </div>
+            <div class="distant__row">
+                <div class="distant__item">
+                    <div class="distant__item-img">
+                        <img src="<%=require('@img/distant-1.png') %>" alt="">
+                    </div>
+                    <h3 class="distant__item-title">
+                        Ремонт без рисков
+                    </h3>
+                    <p class="distant__item-txt">
+                        оплачиваете только <br>
+                        готовую работу
+                    </p>
+                </div>
+                <div class="distant__item">
+                    <div class="distant__item-img">
+                        <img src="<%=require('@img/distant-2.png') %>" alt="">
+                    </div>
+                    <h3 class="distant__item-title">
+                        Страхуем ремонт <br>
+                        до 15 млн. руб. 
+                    </h3>
+                    <p class="distant__item-txt">
+                        от любых ущербов
+                    </p>
+                </div>
+                <div class="distant__item">
+                    <div class="distant__item-img">
+                        <img src="<%=require('@img/distant-3.png') %>" alt="">
+                    </div>
+                    <h3 class="distant__item-title">
+                        Фиксированная цена 
+                    </h3>
+                    <p class="distant__item-txt">
+                        по договору <br>
+                        без изменений
+                    </p>
+                </div>
+                <div class="distant__item">
+                    <div class="distant__item-img">
+                        <img src="<%=require('@img/distant-4.png') %>" alt="">
+                    </div>
+                    <h3 class="distant__item-title">
+                        Базовый дизайн 
+                    </h3>
+                    <p class="distant__item-txt">
+                        по вашим пожеланиям
+                    </p>
+                </div>
+                <div class="distant__item">
+                    <div class="distant__item-img">
+                        <img src="<%=require('@img/distant-5.png') %>" alt="">
+                    </div>
+                    <h3 class="distant__item-title">
+                        Расширенную гарантию
+                    </h3>
+                    <p class="distant__item-txt">
+                        на 5 лет по договору
+                    </p>
+                </div>
+                <div class="distant__item">
+                    <div class="distant__item-img">
+                        <img src="<%=require('@img/distant-6.png') %>" alt="">
+                    </div>
+                    <h3 class="distant__item-title">
+                        Рассрочку 0%
+                    </h3>
+                    <p class="distant__item-txt">
+                        на 12 месяцев
+                    </p>
+                </div>
+            </div>
+            <div class="distant__btn-wrapper">
+                <a href="#quiz-sec" class="distant__btn scroll-to">
+                    
+                    <div class="linear-bg"></div>
+                <span>УЗНАТЬ СТОИМОСТЬ</span>
+                </a>
+            </div>
+            <p class="distant__time">
+                <strong>Уже через 15 минут</strong> вы будете знать реальную стоимость Вашего ремонта
+            </p>
+            <div class="distant__back-wrapper">
+                <button class="distant__back open-footer">
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.39939 0.0275324C8.74193 0.030358 9.07012 0.169567 9.31426 0.415775L15.6439 6.89709C15.892 7.15008 16.0318 7.49348 16.0326 7.85198C16.0333 8.21046 15.895 8.5546 15.6481 8.80855C15.401 9.06267 15.0657 9.20584 14.7156 9.20659C14.3654 9.20734 14.0294 9.06568 13.7814 8.81288L8.38332 3.28544L2.98528 8.81288L2.98509 8.81288C2.65101 9.15347 2.1646 9.28571 1.70947 9.15968C1.25416 9.03366 0.899109 8.66857 0.778074 8.202C0.657025 7.7352 0.788376 7.2379 1.12264 6.8971L7.45223 0.415785C7.70445 0.161292 8.04605 0.0213259 8.40002 0.027542L8.39939 0.0275324Z" fill="#8A7354"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+
+const buttonsNext = document.getElementsByClassName('repair-list__link');
+
+for (var i=0; i < buttonsNext.length; i++) {
+    buttonsNext[i].onclick = function(){
+        let parentEl = this.parentNode.parentNode.parentNode;
+        let activityClass = parentEl.classList.item(2);
+        let nowNumber = parseInt(activityClass.slice(-1), 10);
+        nowNumber += 1;
+        const newClass = 'js--look-' + nowNumber;
+        parentEl.classList.add(newClass);
+    }
+};
+
+const openMore = function() {
+    const rowList = document.getElementById('hidden-feedback');
+    rowList.classList.remove('feedback__row_hidden');
+    rowList.classList.add('feedback__row_visible');
+}
+</script>
+
+
+<%= require('@parts/footer.ejs')() %>

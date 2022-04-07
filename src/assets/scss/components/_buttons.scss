@@ -1,0 +1,70 @@
+%btn-accent {
+    color: $accent;
+}
+
+%btn-yel {
+    width: 397px;
+    height: 101.5px;
+    background: linear-gradient(266deg, rgba(255, 255, 255, 0) 12.38%, rgba(255, 255, 255, 0.37) 30.6%, rgba(255, 255, 255, 0) 72.98%), linear-gradient(94.14deg, #F9E371 11.78%, #F1D74E 92.01%);
+    box-shadow: 0px 19.6764px 33.5656px rgba(0, 0, 0, 0.07), 0px 4.62974px 0px -2.31487px #F0D860, inset 0px 0px 33.4109px rgba(255, 255, 255, 0.33), inset 0px 0px 0px 4.91337px rgba(255, 255, 255, 0.09);
+    border-radius: 86.0167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18.5px;
+    overflow: hidden;
+    line-height: 22px;
+    letter-spacing: 0.105em;
+    color: #A7901D;
+    position: relative;
+    transition: .3s all;
+    &:hover {
+        .linear-bg {
+            opacity: 1;
+        }
+        color: #A7901D;
+        box-shadow: 0px 19.6764px 33.5656px rgba(0, 0, 0, 0.07), 0px 4.62974px 0px -2.31487px #F0D860, inset 0px 0px 33.4109px rgba(255, 255, 255, 0.33), inset 0px 0px 0px 4.91337px rgba(255, 255, 255, 0.09);
+    }
+    &::after {
+        width: 29px;
+        height: 21px;
+        content: '';
+        display: inline-block;
+        background: url(../../assets/img/arrows.svg) center no-repeat;
+        position: absolute;
+        right: 34px;
+        z-index: 2;
+        top: 50%;
+        transform: rotate(180deg) translateY(50%);
+    }
+    &::before {
+        width: 29px;
+        height: 21px;
+        z-index: 2;
+        content: '';
+        display: inline-block;
+        background: url(../../assets/img/arrows.svg) center no-repeat;
+        position: absolute;
+        left: 34px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .linear-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(266deg, rgba(255, 255, 255, 0) 12.38%, rgba(255, 255, 255, 0.37) 30.6%, rgba(255, 255, 255, 0) 72.98%), linear-gradient(94.14deg, #F5D52F 11.78%, #E4C626 92.01%);
+        opacity: 0;
+        transition: .3s all;
+    }
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}

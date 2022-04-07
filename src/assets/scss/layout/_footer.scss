@@ -1,0 +1,127 @@
+
+.befooter {
+    &.active {
+        .open-footer {
+            transform: rotate(180deg);
+        }
+    }
+}
+.open-footer {
+    transition: .3s all;
+}
+
+.footer {
+    background-color: transparent;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    position: absolute;
+    bottom: 0;
+    left: -200vw;
+    opacity: 0;
+    width: 100vw;
+    padding-top: 23px;
+    border-top: 1px solid #E2E2E2;
+    transition: .7s opacity;
+    &.active {
+        left: 0;
+        opacity: 1;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__group {
+        display: flex;
+        align-items: center;
+    }
+    &__txt {
+        max-width: 120px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        margin-left: 32px;
+        color: #464646;
+        strong {
+            font-weight: 300;
+            color: #5E5E5E;
+            display: block;
+        }
+    }
+    &__copy {
+        padding-right: 50px;
+        &-txt {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            color: #565656;
+        }
+        &-link {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            color: #61B5E7;
+            text-decoration: none;
+            transition: .3s all;
+            &:hover {
+                color: #F1D74E;
+            }
+        }
+    }
+    &__contacts {
+        text-align: right;
+        &-txt {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            color: #818181;
+            margin-top: 7px;
+        }
+    }
+    &__phone {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: right;
+        text-decoration: none;
+        color: #444444;
+        transition: .3s all;
+        &:hover {
+            color: #F1D74E;
+        }
+    }
+}
+
+.popup-video {
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 30px;
+    padding: 10px;
+    padding-bottom: 5px;
+    width: 1000px;
+    max-width: 90vw;
+    background: #fff;
+    &__close {
+        position: absolute;
+        right: -50px;
+        top: -50px;
+    }
+    iframe {
+        width: 100%;
+        height: 650px;
+        border-radius: 10px;
+    }
+    display: none;
+    &.active {
+        display: block;
+    }
+}

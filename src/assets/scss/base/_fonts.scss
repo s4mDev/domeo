@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: local('Museo Sans 300'), local('Museo-Sans-300'),
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: local('Museo Sans 300 Italic'), local('Museo-Sans-300-Italic'),
+        url('../fonts/MuseoSansCyrl-300Italic.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300Italic.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-300Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: local('Museo Sans 500'), local('Museo-Sans-500'),
+        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: local('Museo Sans 500 Italic'), local('Museo-Sans-500-Italic'),
+        url('../fonts/MuseoSansCyrl-500Italic.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-500Italic.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-500Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: local('Museo Sans 700'), local('Museo-Sans-700'),
+        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: local('Museo Sans 700 Italic'), local('Museo-Sans-700-Italic'),
+        url('../fonts/MuseoSansCyrl-700Italic.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700Italic.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-700Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Panton';
+    src: local('Panton  Black'), local('Panton--Black'),
+        url('../fonts/Panton-Black.woff2') format('woff2'),
+        url('../fonts/Panton-Black.woff') format('woff'),
+        url('../fonts/Panton-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Panton';
+    src: local('Panton  Bold'), local('Panton--Bold'),
+        url('../fonts/Panton-Bold.woff2') format('woff2'),
+        url('../fonts/Panton-Bold.woff') format('woff'),
+        url('../fonts/Panton-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Panton';
+    src: local('Panton  Extra Bold'), local('Panton--Extra-Bold'),
+        url('../fonts/Panton-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Panton-ExtraBold.woff') format('woff'),
+        url('../fonts/Panton-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: fallback;
+  }
+  @font-face {
+    font-family: 'Panton';
+    src: local('Panton  Light Italic'), local('Panton--Light-Italic'),
+        url('../fonts/Panton-LightItalic.woff2') format('woff2'),
+        url('../fonts/Panton-LightItalic.woff') format('woff'),
+        url('../fonts/Panton-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Panton';
+    src: local('Panton  Regular'), local('Panton--Regular'),
+        url('../fonts/Panton-Regular.woff2') format('woff2'),
+        url('../fonts/Panton-Regular.woff') format('woff'),
+        url('../fonts/Panton-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Panton';
+    src: local('Panton  Regular Italic'), local('Panton--Regular-Italic'),
+        url('../fonts/Panton-RegularItalic.woff2') format('woff2'),
+        url('../fonts/Panton-RegularItalic.woff') format('woff'),
+        url('../fonts/Panton-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Panton';
+    src: local('Panton  SemiBold'), local('Panton--SemiBold'),
+        url('../fonts/Panton-SemiBold.woff2') format('woff2'),
+        url('../fonts/Panton-SemiBold.woff') format('woff'),
+        url('../fonts/Panton-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: fallback;
+  }
